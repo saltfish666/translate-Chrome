@@ -1,0 +1,29 @@
+body{
+    width: 800px;
+    height: 800px;
+}
+
+#submitTrans{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    width: 80%;
+    height: 30px;
+    font-size: 18px;
+    background-color: #99edf7;
+}
+#transResult{
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+    width: 80%;
+    height: 30px;
+    font-size: 18px;
+    background-color: #99edf7;
+    border: 2px;
+}
+
+#transResult tr{
+    /*display: block;*/
+}
