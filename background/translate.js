@@ -316,7 +316,7 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse){
             sendResponse(lastWedPageTranslateResult)
             break
         case "vocabularies":
-            let vocabulariesArray = message.value.filter(isVocabularyInLocalStorage)
+            let vocabulariesArray = message.value.filter(isVocabularyInLocalStorage).slice(0,20)
             getTrans(vocabulariesArray,sucessFun)
             sendResponse("translating");
             break

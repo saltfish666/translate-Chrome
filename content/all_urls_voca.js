@@ -13,8 +13,10 @@ function getVocabulariesFromText(text){
 
 let vocabulariesArray = getVocabulariesFromText(vocab_text)
 console.log(vocabulariesArray)
+/*
 vocabulariesArray = vocabulariesArray.slice(0,20)
 console.log(vocabulariesArray)
+*/
 
 chrome.runtime.sendMessage({"type":"vocabularies","value":vocabulariesArray}, function(response){
     console.log(response)
